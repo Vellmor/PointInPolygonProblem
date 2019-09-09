@@ -156,7 +156,7 @@ namespace PointInPolygonProblemTests
             // Act
             // Assert
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
-            Assert.AreEqual(true, answer);
+            Assert.AreEqual(false, answer);
         }
     }
 }
