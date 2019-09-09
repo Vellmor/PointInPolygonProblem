@@ -114,5 +114,49 @@ namespace PointInPolygonProblemTests
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
             Assert.AreEqual(true, answer);
         }
+
+        [TestMethod]
+        public void PointInsidePolygonWithSelfIntersections()
+        {
+            // Arrange
+            PointF point1 = new PointF(-2F, 1F);
+            PointF[] polygon = new PointF[] {
+                                                new PointF(3F, 0F),
+                                                new PointF(2F, -1F),
+                                                new PointF(1F, 3F),
+                                                new PointF(-3F, 0F),
+                                                new PointF(-2F, 2F),
+                                                new PointF(-1F, 0F),
+                                                new PointF(0F, 4F),
+                                                new PointF(1F, 0F),
+                                                new PointF(2F, 2F),
+                                            };
+            // Act
+            // Assert
+            bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            Assert.AreEqual(true, answer);
+        }
+
+        [TestMethod]
+        public void PointOutsidePolygonWithSelfIntersections()
+        {
+            // Arrange
+            PointF point1 = new PointF(-1F, 2F);
+            PointF[] polygon = new PointF[] {
+                                                new PointF(3F, 0F),
+                                                new PointF(2F, -1F),
+                                                new PointF(1F, 3F),
+                                                new PointF(-3F, 0F),
+                                                new PointF(-2F, 2F),
+                                                new PointF(-1F, 0F),
+                                                new PointF(0F, 4F),
+                                                new PointF(1F, 0F),
+                                                new PointF(2F, 2F),
+                                            };
+            // Act
+            // Assert
+            bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            Assert.AreEqual(true, answer);
+        }
     }
 }
