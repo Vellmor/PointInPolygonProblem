@@ -20,8 +20,8 @@ namespace PointInPolygonProblemTests
                                                 new PointF(13F, 0F),
                                             };
             // Act
-            // Assert
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            // Assert
             Assert.AreEqual(true, answer);
         }
 
@@ -38,8 +38,8 @@ namespace PointInPolygonProblemTests
                                                 new PointF(13F, 0F),
                                             };
             // Act
-            // Assert
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            // Assert
             Assert.AreEqual(false, answer);
         }
 
@@ -56,8 +56,8 @@ namespace PointInPolygonProblemTests
                                                 new PointF(13F, 0F),
                                             };
             // Act
-            // Assert
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            // Assert
             Assert.AreEqual(false, answer);
         }
 
@@ -74,8 +74,8 @@ namespace PointInPolygonProblemTests
                                                 new PointF(13F, 0F),
                                             };
             // Act
-            // Assert
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            // Assert
             Assert.AreEqual(true, answer);
         }
 
@@ -92,8 +92,8 @@ namespace PointInPolygonProblemTests
                                                 new PointF(13F, 0F),
                                             };
             // Act
-            // Assert
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            // Assert
             Assert.AreEqual(true, answer);
         }
 
@@ -110,8 +110,8 @@ namespace PointInPolygonProblemTests
                                                 new PointF(13F, 0F),
                                             };
             // Act
-            // Assert
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            // Assert
             Assert.AreEqual(true, answer);
         }
 
@@ -132,8 +132,8 @@ namespace PointInPolygonProblemTests
                                                 new PointF(2F, 2F),
                                             };
             // Act
-            // Assert
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            // Assert
             Assert.AreEqual(true, answer);
         }
 
@@ -154,8 +154,8 @@ namespace PointInPolygonProblemTests
                                                 new PointF(2F, 2F),
                                             };
             // Act
-            // Assert
             bool answer = IsPointInsideOrOutsidePolygon.IsPointInPolygon(polygon, point1);
+            // Assert
             Assert.AreEqual(false, answer);
         }
     }
